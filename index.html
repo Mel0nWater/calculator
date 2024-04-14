@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="calculator">
-        <input type="text" readonly>
+        <input id="display" type="text" readonly>
         <div id="buttons">
-            <button onclick="Append('+')">+</button>
-            <button onclick="Append('-')">-</button>
-            <button onclick="Append('/')">/</button>
-            <button onclick="Append('*')">x</button>
+            <button class="operand" onclick="Append('+')">+</button>
+            <button class="operand" onclick="Append('-')">-</button>
+            <button class="operand" onclick="Append('/')">/</button>
+            <button class="operand" onclick="Append('*')">x</button>
             <button onclick="Append('1')">1</button>
             <button onclick="Append('2')">2</button>
             <button onclick="Append('3')">3</button>
@@ -29,4 +30,5 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
