@@ -20,7 +20,7 @@ body{
     text-align:left;
     border: none;
     background-color: hsl(0, 0%, 20%);
-
+    color:white;
 }
 
 #buttons{
@@ -31,7 +31,7 @@ body{
 }
 
 .operand{
-    background-color: hsl(28, 98%, 57%);
+    background-color: hsla(28, 98%, 57%, 0.886);
 }
 button{
     border: none;
@@ -51,5 +51,14 @@ button:not(.operand):hover {
 
 button:not(.operand):active {
     background-color: hsla(0, 0%, 70%, 50%);
+    transform: scale(0.95);
+}
+
+.operand:hover {
+    background-color: hsla(28, 98%, 57%, 0.929);
+}
+
+.operand:active {
+    background-color: hsl(28, 98%, 57%);
     transform: scale(0.95);
 }
